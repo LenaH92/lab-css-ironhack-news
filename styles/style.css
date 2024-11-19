@@ -179,6 +179,7 @@ header {
 /* Write your CSS below */
 
 /* small width < 760px */
+  /* nav-bar */
 @media (max-width: 760px){
   .navbar {
     display: flex;
@@ -187,6 +188,25 @@ header {
   }
   .navbar li {
     width: 100%;
+  }
+  /* main article */
+  .main-article{
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .main-article .content, .main-article .image{
+    width: 100%;
+  }
+  
+  /* rest of the articles */
+  .articles-container{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .article{
+    width: 100%;
+    margin-bottom: 2rem;
   }
 }
 
@@ -200,7 +220,23 @@ header {
   .navbar li{
     width: 25%;
   }
+  .main-article{
+    display: flex;
+    align-items: center;
+  }
+
+  /* rest of the articles */
+  .articles-container{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .article{
+    width: 45%;
+    margin-bottom: 1rem;
+  }
 }
+
 
 
 
